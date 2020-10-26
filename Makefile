@@ -12,7 +12,7 @@ ALL_SRC := $(shell find . -name '*.go' \
 							-not -path './testbed/*' \
 							-not -path '*/third_party/*' \
 							-not -path './.github/*' \
-							-not -path './pkg/devexporter/*' \
+							-not -path './pkg/opentelemetry-collector-contrib/*' \
 							-not -path './bin/*' \
 							-not -path './build/*' \
 							-type f | sort)
