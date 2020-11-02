@@ -69,6 +69,17 @@ jobs:
         cat go.mod
         ls pkg
 
+    - name: pull in submodule code
+      run: |
+        git submodule update --init
+        ls pkg
+    
+    - name: append replace statement to go.mod to build with dev repo
+      run: |
+        echo "replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter => ./pkg/opentelemetry-collector-contrib/exporter/awsemfexporter" >> go.mod
+        cat go.mod
+        ls pkg
+
     # Unit Test and attach test coverage badge
     - name: Unit Test
       run: make test
