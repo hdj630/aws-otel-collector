@@ -4,6 +4,9 @@ extensions:
 receivers:
   prometheus:
     config:
+      global:
+        scrape_interval: 1m
+        scrape_timeout: 10s
       scrape_configs:
       - job_name: kubernetes-service-endpoints
         sample_limit: 10000
@@ -62,18 +65,28 @@ exporters:
   awsemf:
     log_group_name: 'awscollector-test'
     region: 'us-west-2'
-    log_stream_name: metric-declarations
+    log_stream_name: parity-cwagent
     dimension_rollup_option: 'NoDimensionRollup'
     metric_declarations:
-    - dimensions: [['Service', 'Namespace'], ['pod_name', 'container_name']]
+    - dimensions: [['Service', 'Namespace']]
       metric_name_selectors:
-      - '^go_memstats_alloc_bytes_total$'
-    - dimensions: [['app_kubernetes_io_component', 'Namespace'], ['app_kubernetes_io_name'], ['Invalid', 'Namespace']]
+      - '^nginx_ingress_controller_(requests|success)$'
+      - '^nginx_ingress_controller_nginx_process_connections$'
+      - '^nginx_ingress_controller_nginx_process_connections_total$'
+      - '^nginx_ingress_controller_nginx_process_resident_memory_bytes$'
+      - '^nginx_ingress_controller_nginx_process_cpu_seconds_total$'
+      - '^nginx_ingress_controller_config_last_reload_successful$'
+      label_matchers:
+      - label_names: ['Service']
+        regex: '.*nginx.*'
+    - dimensions:
+      - ['Service', 'Namespace', 'ingress']
+      - ['Service', 'Namespace', 'status']
       metric_name_selectors:
-      - '^go_goroutines$'
-    - dimensions: [['Namespace', 'app_kubernetes_io_component', 'Namespace']]
-      metric_name_selectors:
-      - '^go_.+$'
+      - '^nginx_ingress_controller_requests$'
+      label_matchers:
+      - label_names: ['Service']
+        regex: '.*nginx.*'
 
 service:
   pipelines:
