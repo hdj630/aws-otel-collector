@@ -165,6 +165,10 @@ github.com/aws/aws-sdk-go v1.35.35 h1:o/EbgEcIPWga7GWhJhb3tiaxqk4/goTdo5YEMdnVxg
 github.com/aws/aws-sdk-go v1.35.35/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
 github.com/aws/aws-sdk-go v1.36.2 h1:UAeFPct+jHqWM+tgiqDrC9/sfbWj6wkcvpsJ+zdcsvA=
 github.com/aws/aws-sdk-go v1.36.2/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
+github.com/aws/aws-sdk-go v1.36.9 h1:TS667yc08a/EHGBqFrfOItpnzSrBFwIf2gQGlDhhQsg=
+github.com/aws/aws-sdk-go v1.36.9/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
+github.com/aws/aws-sdk-go v1.36.13 h1:RAyssUwg/yM7q874D2PQuIST6uhhyYFFPJtgVG/OujI=
+github.com/aws/aws-sdk-go v1.36.13/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
 github.com/aws/aws-sdk-go-v2 v0.18.0/go.mod h1:JWVYvqSMppoMJC0x5wdwiImzgXTI9FuZwxzkQq9wy+g=
 github.com/beeker1121/goque v2.0.1+incompatible h1:5nJHPMqQLxUvGFc8m/NW2QzxKyc0zICmqs/JUsmEjwE=
 github.com/beeker1121/goque v2.0.1+incompatible/go.mod h1:L6dOWBhDOnxUVQsb0wkLve0VCnt2xJW/MI8pdRX4ANw=
@@ -925,6 +929,7 @@ github.com/onsi/gomega v1.10.2 h1:aY/nuoWlKJud2J6U0E3NWsjlg+0GtwXxgEqthRdzlcs=
 github.com/onsi/gomega v1.10.2/go.mod h1:iN09h71vgCQne3DLsj+A5owkum+a2tYe+TOCB1ybHNo=
 github.com/op/go-logging v0.0.0-20160315200505-970db520ece7/go.mod h1:HzydrMdWErDVzsI23lYNej1Htcns9BCg93Dk0bBINWk=
 github.com/open-telemetry/opentelemetry-collector-contrib v0.16.0 h1:CNYthLw9sAdMnYTPx/U0oQvBDoT3S8+DFehtLMUnu5k=
+github.com/open-telemetry/opentelemetry-collector-contrib v0.17.0 h1:VEV/4zJlcpTswsiuMdiBcxMOLcKSWfvSsHVSkrLrvUU=
 github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter v0.16.0 h1:1pfiYIPFwgbluJDoOZe1x3onGLWJBb8RbaU0EpPth/g=
 github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter v0.16.0/go.mod h1:mKdDCv85c40GroelRo64qm8XewRXIYO1atkPMvyDX7M=
 github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsprometheusremotewriteexporter v0.16.0 h1:0TjbpmihZrevF2AaoCpYAr5bfq7j0cuWdHZoV412jpQ=
@@ -961,6 +966,7 @@ github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexpo
 github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter v0.16.0/go.mod h1:/3qDw9fS144sMhePMB5F4XHrAlcy1INkA+F8vAdLXTs=
 github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter v0.16.1-0.20201207211314-a20a6f4f7962 h1:7m1+ca0ok52zfr5lCvgdeKqTPIz6UAw2t0v5lgmWZbk=
 github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter v0.16.1-0.20201207211314-a20a6f4f7962/go.mod h1:N7FM6PDEVqf7BU+hk/mQBPNBNiA6sOhAHbXzSpaV2mQ=
+github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer v0.17.0 h1:hZENV0P3gydVxqLiaT0PMcIMRsTaWkGs2ynUTYiFp9w=
 github.com/open-telemetry/opentelemetry-collector-contrib/internal/awsxray v0.16.0 h1:iTFF0njHqyq3CXbvURqMcllIGF1Wf3ugPURCgCNTDgY=
 github.com/open-telemetry/opentelemetry-collector-contrib/internal/awsxray v0.16.0/go.mod h1:2gUAbcL+AndveUZADYO+8p1H03m3ASYzhtahh46MSWQ=
 github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.16.0 h1:80u3m7L1D6pfGf0VM6N9gbSKAlTBYKQAy3WQfwrMHPs=
@@ -982,6 +988,8 @@ github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsxrayreceiv
 github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awsxrayreceiver v0.16.1-0.20201207211314-a20a6f4f7962/go.mod h1:4wUT3GeNCXEkIyx94TEiIG16igdYdknh6H8VDwzwUFM=
 github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver v0.16.0 h1:AXzT0EH6iAR45MMNkEiWBRI51yf6JbGjexlBL8hcokI=
 github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver v0.16.0/go.mod h1:4WU297OQFKZWxZSgUo7AxkOSLY4EBc17Ao7FtFD1NiY=
+github.com/open-telemetry/opentelemetry-collector-contrib/receiver/receivercreator v0.17.0 h1:8QFTijvAmUWJTGemHpbNbSTFG7pNDEKtJuZiKWs8TJA=
+github.com/open-telemetry/opentelemetry-collector-contrib/receiver/receivercreator v0.17.0/go.mod h1:YQP1JOxYEpS5u00RQDV4VHaAkcYNFlwhuteOuVIcj78=
 github.com/opencontainers/go-digest v1.0.0 h1:apOUWs51W5PlhuyGyz9FCeeBIOUDA/6nW8Oi/yOhh5U=
 github.com/opencontainers/go-digest v1.0.0/go.mod h1:0JzlMkj0TRzQZfJkVvzbP0HBR3IKzErnv2BNG4W4MAM=
 github.com/opencontainers/image-spec v1.0.1 h1:JMemWkRwHx4Zj+fVxWoMCFm/8sYGGrUVojFA6h/TRcI=
@@ -1337,6 +1345,8 @@ go.opentelemetry.io/collector v0.16.0 h1:x5WAHVmm4DvaBgN7uiwnt0buj1ae/dyIvxNGLgt
 go.opentelemetry.io/collector v0.16.0/go.mod h1:xNZjorr8GTcoi4AZ2iFYHGmx+xgE1Ue/oJI+pxKkdjA=
 go.opentelemetry.io/collector v0.16.1-0.20201207152538-326931de8c32 h1:vxuxyBkBKcLXLq/uwgurb6PDzl2QKT0xlbQ0zCpl+9Y=
 go.opentelemetry.io/collector v0.16.1-0.20201207152538-326931de8c32/go.mod h1:h9AuSwXGdKT5M+avYsM8KGL7FiObqUL/1s+BBLpLB80=
+go.opentelemetry.io/collector v0.17.0 h1:Da/hGGexGLFjp444zMJ3y28y0R9Ll/kJTfNVpS2pliY=
+go.opentelemetry.io/collector v0.17.0/go.mod h1:h9AuSwXGdKT5M+avYsM8KGL7FiObqUL/1s+BBLpLB80=
 go.uber.org/atomic v1.3.2/go.mod h1:gD2HeocX3+yG+ygLZcrzQJaqmWj9AIm7n08wl/qW/PE=
 go.uber.org/atomic v1.4.0/go.mod h1:gD2HeocX3+yG+ygLZcrzQJaqmWj9AIm7n08wl/qW/PE=
 go.uber.org/atomic v1.5.0/go.mod h1:sABNBOSYdrvTF6hTgEIbc7YasKWGhgEQZyfxyTvoXHQ=
